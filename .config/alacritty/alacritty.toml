@@ -1,0 +1,16 @@
+import = [
+    "~/.config/alacritty/themes/themes/one_dark.toml"
+]
+
+[shell]
+program = "/usr/bin/zsh"
+
+[window]
+opacity = 0.8
+blur = true
+
+[font]
+normal = { family = "Roboto Mono Nerd Font" }
+
+[cursor]
+style = {shape = "Underline", blinking = "Never"}
