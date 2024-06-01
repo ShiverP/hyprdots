@@ -18,10 +18,13 @@ cd
 sudo pacman -Syu
 
 # Install essential packages
-sudo pacman -S sway zip unzip swayidle sddm firefox htop brightnessctl xdg-desktop-portal blueman xdg-desktop-portal-wlr pavucontrol swaybg waybar grim alacritty swaylock wofi slurp xorg-xwayland neofetch curl wget stow alsa-tools pulsemixer github-cli dolphin base-devel fzf zsh neovim solaar steam --noconfirm
+sudo pacman -S zip unzip sddm htop brightnessctl blueman pavucontrol swaybg waybar grim alacritty wofi slurp xorg-xwayland neofetch curl wget stow alsa-tools pulsemixer github-cli dolphin base-devel fzf zsh neovim solaar steam --noconfirm
 
 # Install fonts
 sudo pacman -S ttf-font-awesome ttf-roboto-mono-nerd --noconfirm
+
+# Install WM
+sudo pacman -S hyprland hyprlock hypridle xdg-desktop-portal-hyprland
 
 # Set global git config name and password
 git config --global user.name "ShiverP"
