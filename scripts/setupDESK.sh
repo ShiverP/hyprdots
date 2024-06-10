@@ -19,14 +19,17 @@ cd
 sudo pacman -Syu
 
 # Install essential packages
-sudo pacman -S sway zip unzip swayidle sddm firefox htop brightnessctl xdg-desktop-portal blueman xdg-desktop-portal-wlr pavucontrol swaybg waybar grim alacritty swaylock wofi slurp xorg-xwayland neofetch curl wget stow alsa-tools pulsemixer github-cli dolphin base-devel fzf zsh neovim solaar steam --noconfirm
+sudo pacman -S zip unzip sddm firefox htop blueman swaybg waybar grim alacritty wofi slurp xorg-xwayland fastfetch curl wget stow alsa-tools pulsemixer github-cli dolphin base-devel fzf zsh neovim solaar steam --noconfirm
 
 # Install fonts
 sudo pacman -S ttf-font-awesome nerd-fonts --noconfirm
 
+# Install WM
+sudo pacman -S hyprland hyprlock hypridle xdg-desktop-portal-hyprland --noconfirm
+
 # Set global git config name and password
 git config --global user.name "ShiverP"
-git config --global usern.email "shivamparwat01@gmail.com"
+git config --global user.email "shivamparwat01@gmail.com"
 
 # Install yay
 git clone https://aur.archlinux.org/yay.git
@@ -37,7 +40,6 @@ rm -rf yay/
 
 # Install yay packages
 yay -S google-chrome spotify webcord multimc-bin autotiling --noconfirm
-yay -S obs-studio-tytan652
 
 # Configure shell
 sudo chsh -s /usr/bin/zsh
@@ -59,9 +61,6 @@ git clone https://github.com/ShiverP/game-engine.git
 git clone https://github.com/ShiverP/edens-crucible.git
 git clone https://github.com/ShiverP/chiclaps.git
 cd
-
-# set up zsh
-zsh
 
 # Enable and start sddm to log in
 sudo systemctl enable sddm
