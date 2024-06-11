@@ -39,7 +39,7 @@ cd
 rm -rf yay/
 
 # Install yay packages
-yay -S google-chrome spotify webcord multimc-bin autotiling --noconfirm
+yay -S google-chrome spotify webcord multimc-bin --noconfirm
 
 # Configure shell
 sudo chsh -s /usr/bin/zsh
